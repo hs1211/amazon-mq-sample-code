@@ -1,29 +1,3 @@
-amazon-mq sample code
-===============================
-
-version number: 0.0.1
-author: hyunsung.kim
-
-Overview
---------
-
-There is no clue when we try to use amazon mq with python which is actually active mq, so here I add some python sample code.
-
-In sample code, you can see unidirectional or bidirectional(a.k.a RPC) sample source code.
-
-
-Installation / Usage
---------------------
-
-To install use pip:
-
-    $ pip install stomp.py==4.1.19
-    
-
-Example
--------
-
-```python
 from stompest.config import StompConfig
 from stompest.sync import Stomp
 import ssl
@@ -42,4 +16,3 @@ if __name__ == '__main__':
     client.send(QUEUE, 'test message 1'.encode())
     client.send(QUEUE, 'test message 2'.encode())
     client.disconnect()
-```
